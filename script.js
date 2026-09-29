@@ -1,0 +1,4 @@
+const curtain=document.getElementById("curtain"),openBtn=document.getElementById("openBtn"),card=document.getElementById("card"),music=document.getElementById("music"),musicBtn=document.getElementById("musicBtn");
+openBtn.addEventListener("click",()=>{curtain.classList.add("leaving");setTimeout(()=>{curtain.style.display="none";card.classList.remove("hidden");card.classList.add("show");musicBtn.classList.remove("hidden");music.volume=.55;music.play().catch(()=>{});reveal();},750)});
+function toggleMusic(){if(music.paused){music.play().then(()=>musicBtn.textContent="♫").catch(()=>{});}else{music.pause();musicBtn.textContent="🔇"}}musicBtn.addEventListener("click",toggleMusic);
+function reveal(){const items=document.querySelectorAll(".reveal");const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");observer.unobserve(e.target)}}),{threshold:.12});items.forEach(x=>observer.observe(x))}
