@@ -1,92 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A watercolor birthday card for Teacher Fabiola — words, paint and a little music, made with love.">
+  <meta property="og:title" content="Happy Birthday Teacher Fabiola">
+  <meta property="og:description" content="A watercolor birthday card for Teacher Fabiola, created by Mauro Mujica.">
   <title>Happy Birthday Teacher Fabiola</title>
-  <meta name="description" content="A watercolor birthday card for Teacher Fabiola.">
-  <link rel="icon" href="assets/favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Caveat:wght@500;600&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Nunito+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <audio id="music" src="fabi.mp3" loop preload="auto"></audio>
 
   <div id="curtain" class="paper curtain">
-    <span class="blob blob-left"></span>
-    <span class="blob blob-right"></span>
+    <span class="bloom blush"></span>
+    <span class="bloom lavender"></span>
     <p class="paint-in script">a little gift for you</p>
-
     <svg class="paint-in gift" viewBox="0 0 64 64" fill="none" aria-hidden="true">
       <rect x="8" y="24" width="48" height="32" rx="6" stroke="currentColor" stroke-width="2.5"/>
       <path d="M8 34h48M32 24v32" stroke="currentColor" stroke-width="2.5"/>
       <path d="M32 24c-6-12-18-10-18-2 0 4 6 4 18 2zm0 0c6-12 18-10 18-2 0 4-6 4-18 2z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
     </svg>
-
-    <h1 class="paint-in title">Teacher Fabiola</h1>
+    <h1 class="paint-in display">Teacher Fabiola</h1>
     <button id="openBtn" class="paint-in open-btn">Tap to open 🎁</button>
     <p class="paint-in hint">with music — best with sound on</p>
   </div>
 
-  <main id="card" class="paper card hidden">
-    <div class="paper-texture"></div>
+  <main id="content" class="paper content hidden">
+    <div class="texture" aria-hidden="true"></div>
     <div class="container">
       <section class="hero">
-        <div class="decorations" aria-hidden="true">
-          <span class="bloom b1"></span><span class="bloom b2"></span>
-          <span class="bloom b3"></span><span class="bloom b4"></span>
-          <svg class="paint-stroke" viewBox="0 0 64 64" fill="none">
-            <path d="M6 40c8-14 18-6 26-16 6-7 16-10 24-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="10" cy="48" r="3.5" fill="currentColor"/><circle cx="20" cy="54" r="2" fill="currentColor"/><circle cx="50" cy="12" r="2.5" fill="currentColor"/>
-          </svg>
-          <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">✦</span><span class="spark s4">✦</span>
-          <img src="assets/art-tools.png" alt="" class="art-tools">
+        <div class="decor" aria-hidden="true">
+          <span class="bloom b1"></span><span class="bloom b2"></span><span class="bloom b3"></span><span class="bloom b4"></span>
+          <svg class="paint-line" viewBox="0 0 64 64" fill="none"><path d="M6 40c8-14 18-6 26-16 6-7 16-10 24-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="10" cy="48" r="3.5" fill="currentColor"/><circle cx="20" cy="54" r="2" fill="currentColor"/><circle cx="50" cy="12" r="2.5" fill="currentColor"/></svg>
+          <span class="sparkle s1">✦</span><span class="sparkle s2">✦</span><span class="sparkle s3">✦</span><span class="sparkle s4">✦</span>
+          <img src="art-tools.png" alt="" class="art-tools">
         </div>
-
         <p class="paint-in script">happy birthday</p>
-        <h2 class="paint-in main-title">Happy Birthday<span>Teacher Fabiola</span></h2>
+        <h2 class="brush display">Happy Birthday <span>Teacher Fabiola</span></h2>
         <div class="gold-rule"></div>
         <p class="paint-in intro">For the one who teaches us words and colors alike.</p>
-        <span class="paint-in scroll">scroll ↓</span>
+        <span class="float script scroll">scroll ↓</span>
       </section>
 
       <section class="body-section">
-        <div class="reveal">
-          <figure class="frame">
-            <div class="paper-card">
-              <h3>A little canvas of words</h3>
-              <div class="gold-rule small"></div>
-              <div class="message">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet, sed pulvinar arcu.</p>
-                <p>Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo, in tincidunt lorem tempus.</p>
-              </div>
+        <div class="reveal frame">
+          <div class="frame-inner">
+            <h3 class="display">A little canvas of words</h3>
+            <div class="gold-rule short"></div>
+            <div class="copy">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
+              <p>Curabitur blandit tempus porttitor. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet, sed pulvinar arcu.</p>
+              <p>Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo, in tincidunt lorem tempus.</p>
             </div>
-          </figure>
+          </div>
         </div>
 
-        <div class="cards reveal">
-          <article class="info-card">
+        <div class="reveal cards">
+          <article class="card">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 20c6-2 4-8 9-13l4 4c-5 5-11 3-13 9zM17 3l4 4-2 2-4-4z"/></svg>
-            <h3>In the studio</h3>
+            <h4 class="display">In the studio</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
           </article>
-          <article class="info-card">
+          <article class="card">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 5a3 3 0 013-3h13v18H7a3 3 0 00-3 3zm4 2v2h9V7z"/></svg>
-            <h3>In the classroom</h3>
+            <h4 class="display">In the classroom</h4>
             <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem.</p>
           </article>
         </div>
-      </section>
 
-      <footer class="reveal footer">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.7-9.3-9A5.3 5.3 0 0112 5.6 5.3 5.3 0 0121.3 12c-1.8 4.3-9.3 9-9.3 9z"/></svg>
-        <div class="gold-rule small"></div>
-        <p class="script">Created by Mauro Mujica</p>
-        <small>October 3rd, 2026</small>
-      </footer>
+        <footer class="reveal footer">
+          <svg class="heart" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.7-9.3-9A5.3 5.3 0 0112 5.6 5.3 5.3 0 0121.3 12c-1.8 4.3-9.3 9-9.3 9z"/></svg>
+          <div class="gold-rule short"></div>
+          <p class="script signature">Created by Mauro Mujica</p>
+          <p class="date">October 3rd, 2026</p>
+        </footer>
+      </section>
     </div>
   </main>
 
